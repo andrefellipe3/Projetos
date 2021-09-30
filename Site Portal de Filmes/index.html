@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="André Fellipe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/v4-shims.css">
+    <link rel="stylesheet" href="estilo.css">
+    <title>PixFilme</title>
+</head>
+
+
+<body>
+    <!--Barra de Navegação-->
+    <header class="menu-principal">
+        <nav class="navbar menu-nav">
+            <img src="./logo.jpg" alt="" style="max-width: 50px;">
+            <h2 class="titulo-site"><b>PixFilmes</b></h2>
+            <a class="nav-link active" id="nav-inicio" href="#">Início</a>
+            <a class="nav-link" id="nav-filmes" href="#">Filmes</a>
+            <a class="nav-link" id="nav-series" href="#">Séries</a>
+            <a class="nav-link" id="nav-filmesAvaliados" href="#">Filmes Bem Avaliados</a>
+            <a class="nav-link" href="#">Entrevistas & Makingof</a>
+            <nav class="navbar navbar-light bg-gray">
+                <div>
+                    <input class=" " type="text" id="search" placeholder="Pesquisar filme" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" id="botaoPesquisar"
+                        onclick="PesquisaFilmes">Search</button>
+                </div>
+            </nav>
+        </nav>
+
+        <!--Barra de Navegação Mobile-->
+        <nav>
+            <input type="checkbox" id="menuToggle">
+            <label for="menuToggle" class="menu-icon">
+                <i class="fa fa-bars"></i>
+                <i class="fa fa-times-circle"></i>
+
+            </label>
+            <ul class="menu">
+                <li><b><a id="estreia-mobile" href="#">Estreia</a></b></li>
+                <li><b><a id="filmes-mobile" href="#">Filmes</a></b></li>
+                <li><b><a id="series-mobile" href="#">Séries</a></b></li>
+                <li><b><a id="avaliacoes-mobile" href="#">Filmes Bem Avaliados</a></b></li>
+                <li><b><a id="entrevista-mobile" href="#">Entrevistas & Makingof</a></b></li>
+                <li><b><a id="novidades-mobile" href="#">Novidades</a></b></li>
+
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!--Conteudo Do Site-->
+
+
+    <section class="titulo">
+        <h1>Lançamentos</h1>
+    </section>
+    <div class="container">
+        <div class="row">
+            <!--Carrosel Indicadores-->
+            <div id="Indicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#Indicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#Indicators" data-slide-to="1"></li>
+                    <li data-target="#Indicators" data-slide-to="2"></li>
+                    <li data-target="#Indicators" data-slide-to="3"></li>
+                </ol>
+                <!--Carrosel-->
+                <div class="carousel-inner">
+                    <!--Item 1-->
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-6 video01">
+                                <div class="embed-responsive embed-responsive-4by3">
+                                    <iframe class="embed-responsive-item"
+                                        src="https://www.youtube.com/embed/HKXoW8FISj4" allowfullscreen></iframe>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-6 texto01">
+                                <h3><b>Creed II</b></h3>
+                                <p><b>Sinopse: </b>A vida de Adonis Creed está tumultuada. Dividido entre as
+                                    obrigações da vida
+                                    pessoal
+                                    e o
+                                    treino para sua próxima grande luta, ele encara o maior desafio de sua vida.
+                                    Enfrentar
+                                    um
+                                    adversário com laços no passado de sua família somente intensifica a próxima
+                                    batalha
+                                    no
+                                    ringue. Rocky Balboa está a seu lado para o que der e vier e, juntos, Rocky e
+                                    Adonis
+                                    vão
+                                    confrontar o legado que os dois compartilham, questionar pelo que vale a pena
+                                    lutar
+                                    e
+                                    descobrir que nada é mais importante do que a família. Creed II é basicamente
+                                    sobre
+                                    voltar
+                                    ao fundamental para redescobrir o que fez de você um campeão e lembrar-se que,
+                                    não
+                                    importa
+                                    onde for, não é possível fugir do passado.</p>
+
+                                <span><b>Diretor: </b>Steven Caple Jr</span><br />
+                                <span><b>Roteiro: </b>Sylvester Stallone e Juel Taylor</span><br />
+                                <p><b>Estreia: </b>2018</p>
+                                <span><b>Elenco: </b>Michael B. Jordan |
+                                    Sylvester Stallone |
+                                    Tessa Thompson |
+                                    Wood Harris |
+                                    Phylicia Rashad |
+                                    Dolph Lundgren </span>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Item 2-->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-6 video02">
+                                <div class="embed-responsive embed-responsive-4by3">
+                                    <iframe class="embed-responsive-item"
+                                        src="https://www.youtube.com/embed/YIkKbMcJL_4" allowfullscreen></iframe>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-6 texto02">
+                                <h3><b>O jogo da imitação</b></h3>
+                                <p><b>Sinopse: </b>Em 1939, a recém-criada agência de inteligência britânica MI6
+                                    recruta Alan Turing, um aluno da Universidade de Cambridge, para entender
+                                    códigos nazistas, incluindo o "Enigma", que criptógrafos acreditavam ser
+                                    inquebrável. A equipe de Turing, incluindo Joan Clarke, analisa as mensagens de
+                                    "Enigma", enquanto ele constrói uma máquina para decifrá-las. Após desvendar as
+                                    codificações, Turing se torna herói. Porém, em 1952, autoridades revelam sua
+                                    homossexualidade, e a vida dele vira um pesadelo.</p>
+
+                                <span><b>Diretor: </b>Morten Tyldum</span><br />
+                                <span><b>Roteiro: </b>Graham Moore</span><br />
+                                <p><b>Estreia: </b>2014</p>
+                                <span><b>Elenco: </b>Benedict Cumberbatch |
+                                    Keira Knightley |
+                                    Matthew Goode |
+                                    Charles Dance |
+                                    Rory Kinear |
+                                    Mark Strong </span>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Item 3-->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-6 video02">
+                                <div class="embed-responsive embed-responsive-4by3">
+                                    <iframe class="embed-responsive-item"
+                                        src="https://www.youtube.com/embed/igLyGvbp-04" allowfullscreen></iframe>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-6 texto02">
+                                <h3><b>Interestelar</b></h3>
+                                <p><b>Sinopse: </b>As reservas naturais da Terra estão chegando ao fim e um grupo de
+                                    astronautas recebe a missão de verificar possíveis planetas para receberem a
+                                    população mundial, possibilitando a continuação da espécie. Cooper é chamado
+                                    para liderar o grupo e aceita a missão sabendo que pode nunca mais ver os
+                                    filhos. Ao lado de Brand, Jenkins e Doyle, ele seguirá em busca de um novo lar.
+                                </p>
+
+                                <span><b>Diretor: </b>Christopher Nolan</span><br />
+                                <span><b>Roteiro: </b> Jonathan Nolan e Christopher Nolan </span><br />
+                                <p><b>Estreia: </b>2014</p>
+                                <span><b>Elenco: </b> Matthew McConaughey |
+                                    Anne Hathaway |
+                                    Jessica Chastain |
+                                    Casey Affleck |
+                                    Wes Bentley |
+                                    Bill Irwin |
+                                    Mackenzie Foy |
+                                    Matt Damon |
+                                    Topher Grace |
+                                    Ellen Burstyn |
+                                    John Lithgow |
+                                    Michael Caine |
+                                    Timothée Chalamet </span>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Item 4-->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-6 video04">
+                                <div class="embed-responsive embed-responsive-4by3">
+                                    <iframe class="embed-responsive-item"
+                                        src="https://www.youtube.com/embed/hujU0dw6Erk" allowfullscreen></iframe>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-6 texto04">
+                                <h3><b>Velozes & Furiosos 7</b></h3>
+                                <p><b>Sinopse: </b>Após os acontecimentos em Londres, Dom, Brian, Letty e o resto da
+                                    equipe têm a chance de voltar para os Estados Unidos e recomeçar suas vidas. Mas
+                                    a tranquilidade do grupo é destruída quando Deckard Shaw, um assassino
+                                    profissional, quer vingança pelo acidente que deixou seu irmão em coma. Agora, a
+                                    equipe tem de unir forças para deter um vilão novo e ainda mais perigoso. Dessa
+                                    vez, não se trata apenas de uma questão de velocidade: a corrida é pela
+                                    sobrevivência.</p>
+
+                                <span><b>Diretor: </b>James Wan</span><br />
+                                <span><b>Roteiro: </b>Chris Morgan</span><br />
+                                <p><b>Estreia: </b>2015</p>
+                                <span><b>Elenco: </b>Vin Diesel |
+                                    Paul Walker |
+                                    Dwayne Johnson |
+                                    Michelle Rodríguez |
+                                    Tyrese Gibson |
+                                    Chris "Ludacris" Bridges |
+                                    Jordana Brewster |
+                                    Djimon Hounsou |
+                                    Tony Jaa |
+                                    Ronda Rousey |
+                                    Nathalie Emmanuel |
+                                    Kurt Russell |
+                                    Jason Statham </span>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="seta-antes">
+                        <a class="carousel-control-prev" href="#Indicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                    </div>
+
+                    <div class="seta-depois">
+                        <a class="carousel-control-next" href="#Indicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Fim Lançamento-->
+
+        <!--Em Destaque CARDS-->
+        <div class="card-group" id="lista_filmes" style="padding-top:30px;">
+            <div class="card" style="width: 18rem;">
+                <img src="" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h4 class="card-title"></h4>
+                    <p></p>
+                    <a href="#" class="btn btn-primary"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container avaliacoes-titulo">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-9">
+                    <h2 class="texto-avaliacao" style="padding-top: 15px;"><b>Ultimas Avaliações</b></h2>
+
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-3 mais-filme">
+                    <button type="button" class="btn btn-secondary" data-toggle="button" aria-pressed="false">
+                        <b>+</b> Carregar mais filmes
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!--Avaliações-->
+        <div class="container">
+            <div class="row avaliacoes">
+                <!--Usuario Jerax-->
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 card border-secondary mb-3 avaliacao01"
+                    style="max-width: 30rem;">
+
+                    <div class="card-header bg-transparent border-secondary usuario01"><img src="./jerax-og.png" alt=""
+                            class="rounded-circle"><b> Jerax </b></div>
+
+                    <div class="card-body text-secondary">
+
+                        <p class="card-text"><b>Comentario:</b> Catalogo de filme vasto e com uma qualidade superior
+                            que faz
+                            o site ser o diferencial dos outros.</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-secondary">
+                        <span><b>Avaliação:</b></span>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+
+                <!--Usuario Topson-->
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 card border-secondary mb-3 avaliacao02"
+                    style="max-width: 30rem;">
+
+                    <div class="card-header bg-transparent border-secondary usuario02"><img src="./topson.png" alt=""
+                            class="rounded-circle"><b> Topson </b></div>
+
+                    <div class="card-body text-secondary">
+
+                        <p class="card-text"><b>Comentario:</b> Site rapido e eficiente,sempre consigo assistir tudo
+                            que eu quero
+                            com qualidade.</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-secondary">
+                        <span><b>Avaliação:</b></span>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+
+                <!--Usuario Ceb-->
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 card border-secondary mb-3 avaliacao03"
+                    style="max-width: 30rem;">
+
+                    <div class="card-header bg-transparent border-secondary usuario03"><img src="./ceb-og.png" alt=""
+                            class="rounded-circle"><b> Ceb </b></div>
+
+                    <div class="card-body text-secondary">
+
+                        <p class="card-text"><b>Comentario:</b> Ótimo site, contem tanto filmes antigos quanto os da
+                            atualidade,sempre recomendo
+                            pros meus amigos!</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-secondary">
+                        <span><b>Avaliação:</b></span>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Fim Avaliações-->
+
+        <div class="mais-avaliacoes">
+            <button type="button" class="btn btn-secondary" data-toggle="button" aria-pressed="false">
+                <b>+</b> Carregar mais avaliações
+            </button>
+        </div>
+
+
+
+        <div class="container makingof">
+            <h2>Entrevistas & Making of</h2>
+            <div class="row">
+
+                <!--Makingof Aquaman-->
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 making01">
+                    <div class="embed-responsive embed-responsive-4by3">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0HEvyxNJRks"
+                            allowfullscreen></iframe>
+                    </div>
+                    <h4><b>Filme: </b>Aquaman</h4>
+                    <span><b>Diretor: </b>James Wan</span></br>
+                    <span><b>Roteiro:</b> David Leslie Johnson
+                        Will Beall</span></br>
+                    <span><b>Estreia: </b></span>2018</br>
+                </div>
+
+                <!--Makingof Age of Ultron-->
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 making02">
+                    <div class="embed-responsive embed-responsive-4by3">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Ciu5yQYwJgY"
+                            allowfullscreen></iframe>
+                    </div>
+                    <h4><b>Filme: </b>Avengers: Age of Ultron</h4>
+                    <span><b>Diretor: </b>Joss Whedon</span></br>
+                    <span><b>Roteiro: </b>Joss Whedon</span></br>
+                    <span><b>Estreia: </b></span>2015</br>
+                </div>
+
+                <!--Makingof Mogli-->
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 making03">
+                    <div class="embed-responsive embed-responsive-4by3">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/O0WFShpzdf4"
+                            allowfullscreen></iframe>
+                    </div>
+                    <h4><b>Filme: </b>Mogli: O Menino Lobo</h4>
+                    <span><b>Diretor: </b>Jon Favreau</span></br>
+                    <span><b>Roteiro: </b>Justin Marks</span></br>
+                    <span><b>Estreia: </b></span>2016</br>
+                </div>
+            </div>
+        </div>
+        <!--Makingof-->
+
+        <div class="mais-makingof">
+            <button type="button" class="btn btn-secondary" data-toggle="button" aria-pressed="false">
+                <b>+</b> Carregar mais makingof
+            </button>
+        </div>
+
+        <div class="container novidades">
+            <h2 class="novidades-titulo">Novidades</h2>
+
+            <!--Primeira Noticia-->
+            <div class="row pantera">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-3 imagem01">
+                    <img src="./pantera-negra.jpg" alt="" style="max-width: 250px;">
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-5 materia01">
+                    <h4>Chadwick Boseman: empresário revela por que ator manteve câncer em segredo</h4>
+                    <p>Ator descobriu a doença em 2016 e, mesmo assim, continuou trabalhando em filmes como 'Pantera
+                        Negra' e 'Destacamento Blood</p>
+
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 sobre-site">
+                    <h3>Sobre</h3>
+                    <p>Phasellus a massa in magna lobortis ullamcorper et et justo. Etiam pharetra congue ante, id
+                        suscipit ipsum vulputate at. Vestibulum eu mollis diam, quis ultricies massa. Phasellus
+                        justo mi, pulvinar convallis pulvinar pharetra, vestibulum sit amet libero. Praesent maximus
+                        elementum sapien, sed imperdiet magna suscipit vitae. Nunc volutpat euismod arcu, a
+                        imperdiet risus porta et.</p>
+                </div>
+            </div>
+            <!--Segunda Noticia-->
+            <div class="row mulan">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-3 imagem02">
+                    <img src="./mulan-noticia.png" alt="" style="max-width: 250px;">
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-5 materia02">
+                    <h4>Adiado, ‘Mulan’ puxa a fila e mais filmes alteram datas de estreia </h4>
+                    <p>Produção da Disney era tratada como grande lançamento pós-pandemia. Sua chegada aos cinemas,
+                        agora, é incerta </p>
+
+                </div>
+
+                <!--Editorial-->
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 editorial">
+                    <h3>Editorial</h3>
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-fill" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                        <b> Redação:</b> Henrique Soares
+                    </svg></br>
+
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-fill" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                        <b> Pesquisa:</b> Caique Almeida
+                    </svg></br>
+
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-fill" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                        <b> Gerente Geral:</b> Rodolfo Vieira
+                    </svg></br>
+                </div>
+            </div>
+
+
+            <!--Terceira Noticia-->
+            <div class="row ryan">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-3 imagem03">
+                    <img src="./ryan-murph.png" alt="" style="max-width: 250px;">
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-5 materia03">
+                    <h4>O que é verdade e o que é ficção na Hollywood de Ryan Murphy</h4>
+                    <p>Série imagina como seria a vida de Rock Hudson, Anna May Wong e outras minorias se a
+                        indústria cinematográfica tivesse ido por caminhos mais gentis em 1940 </p>
+
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 sobre-site">
+                    <h3>Rede Social</h3>
+                    <div class="icones">
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!--Rodapé-->
+
+            <footer class="container footer">
+
+                <div class="row">
+
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-11 copyright">
+                        <p>Copyright 2020 - Disciplina de Desenvolvimento de Interfaces Web - <b>ICEI Puc Minas</b></p>
+                    </div>
+
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-1 logo-footer">
+                        <img src="./logo.jpg" alt="" style="max-width: 100px;">
+                    </div>
+                </div>
+            </footer>
+
+
+
+            <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+                integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+                integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+                crossorigin="anonymous"></script>
+            <script src="app.js"></script>
+</body>
+
+</html>

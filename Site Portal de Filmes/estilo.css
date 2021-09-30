@@ -1,0 +1,275 @@
+.titulo-site
+{
+    color: rgb(228, 222, 222);
+}
+
+.titulo
+{
+ padding-top: 20px;
+ text-align: center;   
+ padding-bottom: 20px;
+}
+
+body
+{
+background:rgba(73, 73, 73, 0.7);
+color: white;
+}
+
+#lista_filmes
+{
+color: black;    
+
+}
+
+
+.avaliacoes
+{
+color: rgb(116, 113, 113);    
+}
+
+
+.menu-principal
+{
+background-color: rgb(17, 5, 5);
+
+}
+
+
+.carousel-inner 
+{
+    background:rgba(0,0,0,0.7);
+color: white;
+}
+
+.card-title
+{
+padding-top: 20px;    
+}
+
+.categoria
+{
+padding-top: 20px;    
+}
+
+.mais-filme
+{
+padding-top: 20px;  
+padding-bottom: 20px;  
+text-align: right;    
+}
+
+.usuario01 img
+{
+max-width: 50px;
+max-height: 50px;
+}
+
+.usuario02 img
+{
+max-width: 50px;
+max-height: 50px;
+
+}
+
+.usuario03 img
+{
+max-width: 50px;
+max-height: 50px;
+}
+
+.usuario01 b 
+{
+padding-left: 10px;
+}
+
+.usuario02 b 
+{
+padding-left: 10px;
+}
+
+.usuario03 b 
+{
+padding-left: 10px;
+}
+
+.mais-avaliacoes
+{
+padding-top: 10px;    
+text-align: right;    
+}
+
+.makingof h2
+{
+padding-bottom: 20px;    
+}
+
+.mais-makingof
+{
+padding-top: 30px;    
+text-align: right;    
+}
+
+.novidades
+{
+    padding-top: 100px;
+    
+}
+
+.novidades-titulo
+{
+padding-bottom: 20px;    
+}
+
+.materia01 p
+{
+padding-top:20px;
+}
+
+.mulan
+{
+padding-bottom: 35px;    
+}
+
+.icones a
+{
+padding-right: 5px;
+text-align: center;
+}
+
+.copyright
+{
+padding-top: 45px;    
+}
+
+#menuToggle
+{
+display: none;
+}
+    
+.menu-icon
+{
+display: none;
+}
+
+.menu
+{
+display: none;    
+}
+
+.avaliacoes-titulo
+{
+padding-top: 20px;    
+}
+
+/* Mobile */
+@media screen and (max-width:600px)
+{
+
+    .menu
+    {
+    display: block;    
+    }
+
+.titulo
+{
+    color: white;
+    background-color: rgb(17, 5, 5);
+}
+
+
+.menu-nav
+{
+display: none;    
+}
+
+.header nav
+{
+display: absolute;
+width: 100%;
+height: 100%;
+}
+
+.menu
+{
+    display: flex;
+    position: fixed;
+    flex-wrap: wrap;
+    align-content: center;
+    top: 0px;
+    left: 0px;
+    width:100%;
+    height: 0%;
+    background:rgba(0,0,0,0.7);
+    overflow: hidden;
+    transition: height 0.3s;
+}
+
+.menu li
+{
+display: block;
+width: 100%;
+margin-left: 0px;
+margin-bottom: 20px;   
+}
+
+.menu li a
+{
+    display: block;
+    text-align: center;
+    width: 100%;
+
+}
+
+.menu-icon
+{
+    display: block;
+    color: white;
+    width: 50px;
+    height: inherit;
+    position: absolute;
+    top: 15px;
+    right: 0px;
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 345px;
+    line-height: 60px;
+    z-index: 999;
+}
+
+.menu-icon i 
+{
+    font-size: 1.7em;
+}
+
+#menuToggle:checked ~ label i:nth-child(2)
+{
+    display: block;
+}
+
+#menuToggle:checked ~ label i:first-child
+{
+    display: none;
+}
+
+#menuToggle:not(checked) ~ label i:first-child
+{
+    display: block;
+}
+
+#menuToggle:not(checked) ~ label i:nth-child(2)
+{
+    display: none;
+}
+
+#menuToggle:checked ~ ul
+{
+ height: 100%; 
+ width: 100%;
+ z-index: 100;
+}
+
+
+
+}    
+
